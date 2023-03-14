@@ -1,1 +1,1 @@
-# adyen-dev
+# Adyen Developers page - Prototype V1
