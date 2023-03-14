@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All developer focused solutions in one place. Learn how to best integrate with Adyen. Code samples, blogs and much more..." />
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/adyen-icon-192x192.png">
+    <title>Adyen Devs</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="" class="header_logo">
+                <!-- Increase the width to 250 to contain the text 'DEVELOPERS' -->
+                <svg width="170" height="30" enable-background="new 0 0 170 30" viewBox="0 0 170 30" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Increase the width to 110 to contain the text 'DEVELOPERS' -->
+                    <rect y="0" x="100" width="60" height="30" rx="8" fill="#E6F8ED"></rect>
+                    <g fill="#0abf53">
+                    <path d="M12.7406 7.0246H0.200639V11.0374H8.32652C8.82812 11.0374 9.22939 11.4387 9.22939 11.9403V18.9626H7.52396C7.02236 18.9626 6.62109 18.5613 6.62109 18.0597V13.0438H3.21022C1.40447 13.0438 0 14.4482 0 16.254V19.8655C0 21.6712 1.40447 23.0757 3.21022 23.0757H15.9508V10.2348C15.9508 8.42907 14.5463 7.0246 12.7406 7.0246V7.0246Z" fill="#0ABF53"></path>
+                    <path d="M27.8888 18.9626H26.1834C25.6818 18.9626 25.2805 18.5613 25.2805 18.0597V7.02459H21.8696C20.0639 7.02459 18.6594 8.42906 18.6594 10.2348V19.7652C18.6594 21.5709 20.0639 22.9754 21.8696 22.9754H34.6102V0.403503H27.9891L27.8888 18.9626Z" fill="#0ABF53"></path>
+                    <path d="M46.4479 18.9626H44.7425C44.2409 18.9626 43.8396 18.5613 43.8396 18.0597V7.0246H37.2185V19.7652C37.2185 21.5709 38.623 22.9754 40.4287 22.9754H46.5482V24.9818H37.5195V29.5965H50.0594C51.8652 29.5965 53.2696 28.192 53.2696 26.3863V7.0246H46.6485V18.9626H46.4479Z" fill="#0ABF53"></path>
+                    <path d="M68.5182 7.0246H55.7776V19.7652C55.7776 21.5709 57.1821 22.9754 58.9879 22.9754H71.5278V18.9626H63.4019C62.9003 18.9626 62.4991 18.5613 62.4991 18.0597V11.0374H64.2045C64.7061 11.0374 65.1074 11.4387 65.1074 11.9403V16.9562H68.5182C70.324 16.9562 71.7284 15.5518 71.7284 13.746V10.2348C71.7284 8.42907 70.2237 7.0246 68.5182 7.0246V7.0246Z" fill="#0ABF53"></path>
+                    <path d="M87.0773 7.0246H74.3367V22.9754H80.9578V11.0374H82.6633C83.1648 11.0374 83.5661 11.4387 83.5661 11.9403V22.9754H90.2875V10.2348C90.2875 8.42907 88.8831 7.0246 87.0773 7.0246V7.0246Z" fill="#0ABF53"></path>
+                    </g>
+                    <!-- Text -->
+                    <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Fakt, Arial, sans-serif" font-size="13" y="20" x="110" stroke-width="0" fill="#09ae4c">DEVS</text>
+                </svg>
+            </a>
+            <!-- Implement as soon as we have a first version -->
+            <!-- <nav class="nav" id="nav">
+                <ul class="nav_list">
+                    <li class="nav_list_item">
+                        <a href="/">Build</a>
+                    </li>
+                    <li class="nav_list_item">
+                        <a href="">Tech @Adyen</a>
+                    </li>
+                </ul>
+                <button class="btn prim_btn" onclick="toggleMenu()">
+                    <a href="https://www.adyen.com/signup">Test account</a>
+                </button>
+            </nav> -->
+            <!-- <span class="hamburger clickable"></span> -->
+        </div>
+    </header>
+    <main class="">
+
+        <!-- Hero starts -->
+        <section class="hero">
+            <div class="container ls_flex_content">
+                <div class="ls_flex_details">
+                  <h1 class="ls_flex_details_title">
+                   Adyen 💚 Devs
+                  </h1>
+                  <p class="ds-text-medium">
+                    All developer focused solutions in one place. Learn how to best integrate with Adyen. Code samples, blogs and much more...                 </p>
+                </div>
+                <div class="ls_flex_img">
+                  <img
+                    src="img/help-general-home-hero-large.webp"
+                    alt="image"
+                  />
+                </div>
+                <!-- <div class="hero-shape-container">
+                  <div class="hero-shape hero-shape--primary--help-secondary"></div> 
+                  <div class="hero-shape hero-shape--secondary--help-secondary"></div>
+              </div> -->
+              </div>
+        </section>
+        <!-- Hero ends -->
+
+        <section class="sect new-card">
+            <div class="container">
+                <div class="sect_header">
+                    <h3>Developer Resources</h3>
+                </div>
+                <div class="card new-card-list">
+                    <div class="new-card-list_item">
+                        <div class="image-area">
+                            <img src="img/help-general-other-resources-service-education-medium.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <span class="ds-heading-xsmall">Resource 1</span>
+                            <p>Answer your payment questions with our help articles.</p>
+                        </div>
+
+                    </div>
+                    <div class="new-card-list_item">
+                        <div class="image-area">
+                            <img src="img/help-general-other-resources-service-education-medium.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <span class="ds-heading-xsmall">Resource 2</span>
+                            <p>Answer your payment questions with our help articles.</p>
+                        </div>
+
+                    </div>
+                    <div class="new-card-list_item">
+                        <div class="image-area">
+                            <img src="img/help-general-other-resources-service-education-medium.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <span class="ds-heading-xsmall">Resource 3</span>
+                            <p>Answer your payment questions with our help articles.</p>
+                        </div>
+
+                    </div>
+                    <div class="new-card-list_item">
+                        <div class="image-area">
+                            <img src="img/help-general-other-resources-service-education-medium.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <span class="ds-heading-xsmall">Resource 4</span>
+                            <p>Answer your payment questions with our help articles.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Resources -->
+        <section class="sect resources">
+            <div class="container">
+                <div class="sect_header">
+                    <h3>Developer Tools</h3>
+                    <p>All the tools and locations to help you start building fast.</p>
+                </div>
+                <div class="card">
+                    <a href="https://docs.adyen.com/" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/themes/adyen-docs/assets/icons/library.svg" alt="" class="icon">
+                                <h4 class="title">Documentation</h4>
+                                <div class="descrp">
+                                    <p>Our exhaustive documentation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://docs.adyen.com/api-explorer/" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/themes/adyen-docs/assets/icons/api-explorer.svg" alt="" class="icon">
+                                <h4 class="title">API Explorer</h4>
+                                <div class="descrp">
+                                    <p>Our official API Reference.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/adyen-examples/" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/pages/docs/13.development-resources/github.svg" alt="" class="icon">
+                                <h4 class="title">Samples</h4>
+                                <div class="descrp">
+                                    <p>Integration samples in multiple languages</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://postman.com/adyendev/" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/pages/docs/13.development-resources/postman.svg" alt="" class="icon">
+                                <h4 class="title">Postman workspace</h4>
+                                <div class="descrp">
+                                    <p>All of our APIs available as Postman collections</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://docs.adyen.com/development-resources/testing/test-card-numbers" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/themes/adyen-docs/assets/icons/credit-card-2.svg" alt="" class="icon">
+                                <h4 class="title">Test Cards</h4>
+                                <div class="descrp">
+                                    <p> Test your integration with our test card numbers and payment method details. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.youtube.com/@adyendevs" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/pages/docs/13.development-resources/youtube.svg" alt="" class="icon">
+                                <h4 class="title">AdyenDevs on Youtube</h4>
+                                <div class="descrp">
+                                    <p>Our Tech Youtube channel with tutorials on various topics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Ways to contact us --> 
+        <section class="sect resources">
+            <div class="container">
+                <div class="sect_header">
+                    <h3>Knowledge base</h3>
+                    <p>Asking for help, getting questions answered </p>
+                </div>
+                <div class="card">
+                    <a href="https://stackoverflow.com/questions/tagged/adyen" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/pages/docs/13.development-resources/stackoverflow.svg" alt="" class="icon">
+                                <h4 class="title">Stack Overflow</h4>
+                                <div class="descrp">
+                                    <p>Asking technical and getting community answers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://help.adyen.com/" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/themes/adyen-docs/assets/icons/help.svg" alt="" class="icon">
+                                <h4 class="title">Adyen Help</h4>
+                                <div class="descrp">
+                                    <p>The one location to get questions about our products answered</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://twitter.com/adyendevs" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/themes/adyen-docs/assets/icons/social.svg" alt="" class="icon">
+                                <h4 class="title">AdyenDevs on Twitter</h4>
+                                <div class="descrp">
+                                    <p>Our Developer account on Twitter</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Diving further --> 
+        <section class="sect resources">
+            <div class="container">
+                <div class="sect_header">
+                    <h3>Diving further</h3>
+                    <p>Diving into our source</p>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/adyen" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/pages/docs/13.development-resources/github.svg" alt="" class="icon">
+                                <h4 class="title">GitHub source code</h4>
+                                <div class="descrp">
+                                    <p>The source for all of our libraries and tooling</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/adyen/adyen-openapi" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/pages/docs/13.development-resources/api.svg" alt="" class="icon">
+                                <h4 class="title">OpenAPI Specifications</h4>
+                                <div class="descrp">
+                                    <p>Our latest API specifications, in OpenAPI format</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.adyen.com/blog/category/tech" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/pages/docs/13.development-resources/api-creds.svg" alt="" class="icon">
+                                <h4 class="title">Tech Blog</h4>
+                                <div class="descrp">
+                                    <p>Deep dives into our Tech Stack</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.adyen.com/newsletter/developers" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/themes/adyen-docs/assets/icons/news.svg" alt="" class="icon">
+                                <h4 class="title">Our Tech Newsletter</h4>
+                                <div class="descrp">
+                                    <p>Monthly info about what's up, new products and more</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="https://adyencheckout.fly.dev/" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/pages/docs/13.development-resources/api.svg" alt="" class="icon">
+                                <h4 class="title">Adyen Checkout Create</h4>
+                                <div class="descrp">
+                                    <p>Interactive Drop-in creation and styling tool</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.adyen.com/payment-methods/" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/pages/docs/13.development-resources/library.svg" alt="" class="icon">
+                                <h4 class="title">Supported Payment Methods</h4>
+                                <div class="descrp">
+                                    <p>An exhaustive list of our supported payment methods</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+         <!-- Logging In --> 
+        <section class="sect resources">
+            <div class="container">
+                <div class="sect_header">
+                    <h3>Logging In the Customer Area</h3>
+                    <p>Direct links to your various environments</p>
+                </div>
+                <div class="card">
+                    <a href="https://ca-live.adyen.com/ca/ca/login.shtml" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/pages/docs/13.development-resources/api-creds.svg" alt="" class="icon">
+                                <h4 class="title">LIVE Log In</h4>
+                                <div class="descrp">
+                                    <p>Logging in your LIVE environment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://ca-test.adyen.com/ca/ca/login.shtml" class="card_item">
+                        <div class="card_item_top">
+                            <div class="content">
+                                <img src="https://docs.adyen.com/user/pages/docs/13.development-resources/api-creds.svg" alt="" class="icon">
+                                <h4 class="title">TEST Log In</h4>
+                                <div class="descrp">
+                                    <p>Logging in your TEST environment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_top">
+                <div class="footer_top_list">
+                    <div class="footer_top_list_item">
+                        <h5 class="title">Knowledge</h5>
+                        <ul>
+                            <li>Collections</li>
+                        </ul>
+                    </div>
+                    <div class="footer_top_list_item">
+                        <h5 class="title">Academy</h5>
+                        <ul>
+                            <li>
+                                <a href="https://twitter.com/adyendevs" class="">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.adyen.com/newsletter/developers" class="">
+                                    Developer newsletter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://stackoverflow.com/questions/tagged/adyen" class="">
+                                    Stack Overflow
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://help.adyen.com/" class="">
+                                    Support
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer_top_socials">
+                    <ul class="dis-flex">
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="Facebook-small" role="img" data-j-link-icon-only="" class="icon" data-v-d8742040="">
+                                    <svg fill="currentColor">
+                                    <g clip-path="url(#clip0_21_2240)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.75C18.2132 0.75 23.25 5.78676 23.25 12.0002C23.25 17.6154 19.1359 22.2696 13.7576 23.1135V15.2529H16.3791L16.8775 12.0002H13.7576V9.88964C13.7576 9.0006 14.1928 8.13199 15.5913 8.13199H17.0104V5.36333C17.0104 5.36333 15.7226 5.14346 14.4918 5.14346C11.9225 5.14346 10.2424 6.70019 10.2424 9.52093V12H7.38519V15.2527H10.2424V23.1134C4.86409 22.2695 0.75 17.6153 0.75 12C0.75 5.78676 5.78675 0.75 12 0.75Z"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_21_2240">
+                                    <rect width="24" height="24" fill="currentColor"></rect>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="Linkedin-small" role="img" data-j-link-icon-only="" class="icon" data-v-d8742040="">
+                                    <svg fill="currentColor">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1763 1.41174H5.82339C3.38809 1.41174 1.41162 3.38821 1.41162 5.82351V18.1765C1.41162 20.6117 3.38809 22.5882 5.82339 22.5882H18.1763C20.6116 22.5882 22.5881 20.6117 22.5881 18.1765V5.82351C22.5881 3.38821 20.6116 1.41174 18.1763 1.41174ZM8.47045 18.1765H5.82339V8.47057H8.47045V18.1765ZM7.14692 7.34998C6.29103 7.34998 5.6028 6.65292 5.6028 5.79704C5.6028 4.94116 6.29103 4.23527 7.14692 4.23527C8.0028 4.23527 8.69103 4.93233 8.69103 5.78821C8.69103 6.6441 8.0028 7.34998 7.14692 7.34998ZM19.0587 18.1765H16.4116V13.2353C16.4116 10.2617 12.8822 10.4912 12.8822 13.2353V18.1765H10.2352V8.47057H12.8822V10.0323C14.1175 7.74704 19.0587 7.57939 19.0587 12.2206V18.1765Z"></path>
+                                    </svg>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="Twitter-small" role="img" data-j-link-icon-only="" class="icon" data-v-d8742040="">
+                                    <svg fill="currentColor">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.25 5.25937C22.425 5.625 21.5344 5.87812 20.5969 5.99062C21.5531 5.41875 22.2844 4.51875 22.6313 3.44063C21.7406 3.96562 20.7469 4.35 19.6969 4.56563C18.8531 3.65625 17.6531 3.09375 16.3313 3.09375C13.35 3.09375 11.1656 5.87813 11.8312 8.76562C7.99687 8.56875 4.59375 6.73125 2.31562 3.9375C1.10625 6.00938 1.6875 8.72812 3.74063 10.1062C2.99063 10.0781 2.27813 9.87188 1.65 9.525C1.60312 11.6625 3.13125 13.6594 5.35312 14.1094C4.70625 14.2875 3.99375 14.325 3.27188 14.1844C3.8625 16.0219 5.55937 17.3531 7.58437 17.3906C5.64375 18.9187 3.19687 19.5938 0.75 19.3031C2.79375 20.6156 5.22188 21.375 7.82812 21.375C16.3969 21.375 21.2437 14.1375 20.9438 7.64062C21.8438 6.99375 22.6313 6.1875 23.25 5.25937Z"></path>
+                                    </svg>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <ul class="dis-flex">
+                    <li class="dis-flex">
+                        <a href="">Privacy</a>
+                        <span>.</span>
+                    </li>
+                    <li class="dis-flex">
+                        <a href="">Cookies</a>
+                        <span>.</span>
+                    </li>
+                    <li class="dis-flex">
+                        <a href="">Disclaimer</a>
+                        <span>.</span>
+                    </li>
+                    <li>
+                        <a href="">© 2023 Adyen</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

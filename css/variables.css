@@ -1,0 +1,23 @@
+/*------css varaible------*/
+:root {
+    --primary-color1: #0abf53;
+    --secondary-color1: #00112c;
+    --secondary-color2: #00112c;
+    --secondary-color3: #394962;
+    --yellow-color1: #ffc200;
+    /* --green-color1: #0abf53;
+    --green-color2: #0abf53; */
+    --white-color: #ffffff;
+    --grey-color1: #dce0e5;
+    --box-shadow1: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    --box-shadow2: 0px 4px 14px rgba(0, 0, 0, 0.06);
+    --border-radius1: 6px;
+    --border-radius2: 8px;
+    --border-radius3: 12px;
+    --s-1: 0.5rem;
+    --s-2: 1rem;
+    --s-3: 1.5rem;
+    --s-4: 2rem;
+    --s-5: 2.5rem;
+    --s-6: 3rem;
+}

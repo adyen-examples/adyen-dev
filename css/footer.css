@@ -1,0 +1,99 @@
+@import url(variables.css);
+
+footer {
+    padding-top: 6rem;
+    background-color: var(--secondary-color2);
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--s-4);
+    margin-bottom: 6rem;
+}
+@media only screen and (max-width: 700px) {
+    .footer_top {
+        flex-direction: column;
+    }
+}
+.footer_top .footer_top_list {
+    display: flex;
+    gap: calc(var(--s-6) + 4rem);
+    color: var(--white-color);
+}
+@media only screen and (max-width: 700px) {
+    .footer_top .footer_top_list {
+        justify-content: space-between;
+    }
+}
+.footer_top_list .footer_top_list_item .title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.footer_top_list .footer_top_list_item ul li {
+    margin-top: 6px;
+}
+.footer_top_list .footer_top_list_item ul li a {
+    color: var(--white-color);
+    transition: all .15s ease-out;
+}
+.footer_top_list .footer_top_list_item ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_top_socials ul {
+    gap: var(--s-2);
+}
+.footer_top_socials ul li a {
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #404d61;
+    color: #8f97a3;
+    border-radius: 8px;
+    transition: all .15s ease-out;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+.footer_top_socials ul li:hover a {
+    background-color: #dee1e6;
+    color: #00112c;
+    cursor: pointer;
+}
+
+
+/* Footer bottom starts */
+.footer_bottom {
+    border-top: 1px solid #404d61;
+    display: flex;
+    /* flex-direction: column-reverse;
+    padding: 24px 0; */
+    color: #8f97a3;
+    align-items: center;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    padding: 24px 0;
+}
+.footer_bottom ul li a {
+    color: #8f97a3;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    transition: all .15s ease-out;
+}
+.footer_bottom ul li a:hover {
+    text-decoration: underline;
+}
+.footer_bottom ul li span {
+    display: block;
+    margin: 0 5px;
+    margin-bottom: 5px;
+}
+/* Footer bottom ends */

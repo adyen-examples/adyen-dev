@@ -1,0 +1,114 @@
+@import url(variables.css);
+
+/* Header starts */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--white-color);
+    z-index: 200;
+    /* box-shadow: 0 8px 8px rgb(0 17 44 / 4%), 0 2px 4px rgb(0 17 44 / 8%); */
+}
+header .container {
+    padding: 12px 40px;
+    height: 64px;
+    gap: var(--s-2);
+    justify-content: space-between;
+    /*box-shadow: 0 8px 8px rgb(0 17 44 / 4%), 0 2px 4px rgb(0 17 44 / 8%);*/
+}
+@media screen and (max-width: 640px) {
+    header .container {
+        padding: 12px 24px;
+    }
+}
+header .header_logo {
+    display: block;
+    margin: 4px 0 0 2px;
+}
+/* .nav {
+    gap: var(--s-2);
+} */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: var(--s-5);
+}
+.nav .nav_list {
+    gap: var(--s-4);
+
+}
+.nav .nav_list .nav_list_item {
+    font-weight: 100;
+    font-size: 16px;
+    color: var(--secondary-color3);
+}
+.nav .nav_list .nav_list_item a {
+    transition: all 0.2s ease-in-out;
+
+}
+.nav .nav_list .nav_list_item a:hover {
+    color: var(--primary-color1);
+
+}
+/* Header ends */
+
+.hamburger {
+    display: none;
+    background: var(--secondary-color2);
+    border-radius: 2px;
+    height: 2px;
+    position: relative;
+    transition: .2s ease-in-out;
+    width: 24px;
+}
+.hamburger::before, 
+.hamburger::after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: var(--secondary-color2);
+    border-radius: 2px;
+    transform-origin: 2px center;
+    transition: .2s ease-in-out;
+}
+.hamburger::before {
+    top: 6px;
+}
+.hamburger::after {
+    top: -6px;
+}
+.hamburger.open-menu {
+    background-color: transparent;
+}
+.hamburger.open-menu::before {
+    transform: rotate3d(0, 0, 1, 45deg);
+    top: 0;
+    transform-origin: 50% 50%;
+}
+.hamburger.open-menu::after {
+    transform: rotate3d(0, 0, 1, -45deg);
+    top: 0;
+    transform-origin: 50% 50%;
+    width: 24px;
+}
+@media only screen and (max-width: 997px) {
+    .nav {
+        display: none;
+    }
+    .nav.open-menu {
+        display: grid;
+        grid-gap: var(--s-2);
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white-color);
+        padding: var(--s-4);
+        box-shadow: 0 8px 8px rgb(0 17 44 / 4%), 0 2px 4px rgb(0 17 44 / 8%);
+    }
+    .hamburger {
+        display: inline-block;
+    }
+} 
