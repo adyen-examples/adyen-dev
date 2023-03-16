@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   /* padding: 5% 0; */
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .ls_flex_content {
   display: flex;
