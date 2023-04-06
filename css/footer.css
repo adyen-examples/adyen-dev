@@ -1,7 +1,7 @@
 @import url(variables.css);
 
 footer {
-    padding-top: 6rem;
+    /* padding-top: 6rem; */
     background-color: var(--secondary-color2);
 }
 
@@ -9,7 +9,7 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: var(--s-4);
-    margin-bottom: 6rem;
+    /* margin-bottom: 6rem; */
 }
 @media only screen and (max-width: 700px) {
     .footer_top {
