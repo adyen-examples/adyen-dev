@@ -37,14 +37,14 @@
 
 .ls_flex_content .ls_flex_img {
   flex-basis: 40%;
-  background-color: #f7f8f9;
+  background-color: #fff;
   position: relative;
 }
 .ls_flex_content .ls_flex_img img {
   max-width: 100%;
   max-width: 576px;
   height: auto;
-  border-radius: var(--s-2);
+  /* border-radius: var(--s-2); */
   position: relative;
   margin-top: calc(var(--s-6) + 3rem);
 }
