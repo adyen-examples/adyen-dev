@@ -2,13 +2,10 @@
 .hero {
   position: relative;
   display: flex;
-  /* padding: 5% 0; */
-  /* min-height: 100vh; */
 }
 .ls_flex_content {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 @media only screen and (max-width: 670px) {
     .ls_flex_content {
@@ -44,7 +41,6 @@
   max-width: 100%;
   max-width: 576px;
   height: auto;
-  /* border-radius: var(--s-2); */
   position: relative;
   margin-top: calc(var(--s-6) + 3rem);
 }
@@ -59,12 +55,6 @@
 /* Vector starts */
 
 .hero .hero-shape-container {
-    /* height: 100%;
-    padding-bottom: 12px;
-    position: absolute;
-    right: -240px;
-    top: 0;
-    width: 240px; */
     height: 100%;
     padding-bottom: 12px;
     position: absolute;
@@ -73,15 +63,12 @@
     width: 3%;
 }
 @media only screen and (max-width: 768px) {
-    /* .hero .hero-shape-container {
-        right: -252px;
-    } */
 }
 .hero .hero-shape {
     border-radius: 12px 0 0 12px;
     height: 50%;
     margin-bottom: 12px;
-    /* width: 240px; */
+
 }
 .hero .hero-shape--primary--help-secondary {
     background-color: var(--primary-color1);
