@@ -6,14 +6,14 @@ header {
     width: 100%;
     background-color: var(--white-color);
     z-index: 200;
-    /* box-shadow: 0 8px 8px rgb(0 17 44 / 4%), 0 2px 4px rgb(0 17 44 / 8%); */
+  
 }
 header .container {
-    padding: 12px 40px;
+    padding: 12px 5%;
     height: 64px;
     gap: var(--s-2);
     justify-content: space-between;
-    /*box-shadow: 0 8px 8px rgb(0 17 44 / 4%), 0 2px 4px rgb(0 17 44 / 8%);*/
+   
 }
 @media screen and (max-width: 640px) {
     header .container {
@@ -24,9 +24,7 @@ header .header_logo {
     display: block;
     margin: 4px 0 0 2px;
 }
-/* .nav {
-    gap: var(--s-2);
-} */
+
 .nav {
     display: flex;
     align-items: center;
