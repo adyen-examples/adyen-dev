@@ -361,7 +361,13 @@ main {
     text-decoration: underline;
 } 
 
+.links_list{
+    text-align: center;
+    margin-top: 16px;;
+}
+
 /* Resources ends */
+
 
 
 
