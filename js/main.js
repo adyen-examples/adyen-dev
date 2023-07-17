@@ -1,8 +1,15 @@
-/*===== MENU TOGGLE =====*/
-const navList = document.querySelector('.nav');
-const toggleMenu = document.querySelector('.hamburger');
+document.addEventListener("DOMContentLoaded", () => {
+    const example_icons = document.querySelectorAll('a.a_icon');
 
-toggleMenu.addEventListener('click', () => {
-    navList.classList.toggle('open-menu');
-    toggleMenu.classList.toggle('open-menu');
-});
+    example_icons.forEach(function (icon) {
+
+        icon.addEventListener( 'mouseover', function() {
+            this.className = this.className.replace("colored", "");
+        });
+
+        icon.addEventListener( 'mouseout', function() {
+            this.className += "colored";
+        });
+
+    });
+  });

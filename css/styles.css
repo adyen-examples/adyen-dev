@@ -20,6 +20,11 @@ body {
     line-height: 28px;
   
 }
+
+ul{
+    list-style: none
+}
+
 li {
     list-style: none;
 }
@@ -145,6 +150,20 @@ small {
     font-size: 0.75rem;
 }
 
+li.a{
+
+}
+
+.a_icon{
+    font-size: 2.5rem;
+    background-color: transparent; 
+}
+
+.button_icon{
+    font-size: 2.5rem;
+    background-color: transparent; 
+}
+
 /* Header and Paragraphs ends */
 
 /* Section starts */
@@ -209,7 +228,7 @@ main {
     margin-top: var(--s-1);
 }
 .card_item_top .descrp ul li {
-    list-style: disc;    
+    /* list-style: disc;     */
     margin-left: 12px;
 } 
 .card_item_top .descrp ul li:not(:last-child) {
@@ -342,6 +361,15 @@ main {
     text-decoration: underline;
 } 
 
+.links_list{
+    text-align: center;
+    margin-top: 16px;;
+}
+
 /* Resources ends */
+
+
+
+
 
 
