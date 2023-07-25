@@ -384,14 +384,14 @@ main {
     text-align: center;
     margin-top: 16px;
     font-weight: 600;
-    padding: 4px 16px 4px 16px;
+    padding: 0px 16px 0px 16px;
 }
 
 .newsletter_links_list_not_available {
     text-align: center;
     margin-top: 16px;
     font-weight: 500;
-    padding: 4px 16px 4px 16px;
+    padding: 0px 16px 0px 16px;
     color: #808080;
 }
 .newsletter_links_list a:hover {
