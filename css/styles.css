@@ -357,20 +357,24 @@ main {
     justify-content: space-between;
     gap: var(--s-3);
 }
+
 .libraries .libraries_list .libraries_list_item {
     background-color: var(--white-color);
     text-align: center;
 } 
+
 .libraries_list_item .library-svg {
     width: 24px;
     height: 24px;
 } 
+
 .libraries_list_item .name {
     transition: all 0.2s ease;
 } 
+
 .libraries_list_item:hover .name {
     text-decoration: underline;
-} 
+}
 
 .links_list{
     text-align: center;
@@ -394,12 +398,23 @@ main {
     padding: 0px 16px 0px 16px;
     color: #808080;
 }
+
 .newsletter_links_list a:hover {
     color: #0abf53;
     transition: color 0.16s ease-in-out;
 }
+
 .newsletter_archive {
     margin-top: -64px;
+}
+
+.newsletter_sign_up {
+    color: #0abf53;
+}
+
+.newsletter_sign_up:hover {
+    color: #808080;
+    transition: color 0.16s ease-in-out;
 }
 
 /* Newsletter Archive end */
