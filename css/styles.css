@@ -215,7 +215,7 @@ main {
 }
 .card_item:hover {
     background-color: #fafafa;
-    box-shadow: inset 0 0 0 2px #0abf53;
+    box-shadow: inset 0 0 0 1px #0abf53;
     transition: box-shadow 0.2s ease-in-out;
 }
 .card_item_box_shadow_small:hover {
