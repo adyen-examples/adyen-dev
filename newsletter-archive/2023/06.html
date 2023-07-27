@@ -1,0 +1,652 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<!-- Marketo Variable Definitions -->                                               
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<meta name="color-scheme" content="light dark" /> 
+<meta name="supported-color-schemes" content="light dark" /> 
+<title>Adyen Newsletter</title> 
+<style type="text/css">
+      @font-face {
+        font-family: 'Fakt';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: url('https://go.adyen.com/rs/222-DNK-376/images/Fakt-Normal.otf'), url('https://go.adyen.com/rs/222-DNK-376/images/FaktTT-Normal.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'Fakt Blond';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: url('https://go.adyen.com/rs/222-DNK-376/images/Fakt-Blond.otf'), url('https://go.adyen.com/rs/222-DNK-376/images/FaktTT-Blond.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'Fakt Semibold';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: url('https://go.adyen.com/rs/222-DNK-376/images/Fakt-SemiBold.otf'), url('https://go.adyen.com/rs/222-DNK-376/images/FaktTT-SemiBold.ttf') format('truetype');
+      }
+    </style> 
+<style type="text/css">
+      /* Client-specific Styles */
+      #outlook a { padding: 0; }
+      body { width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; font-family: Arial; font-size: 16px; line-height: 26px; background-color: #F3F6F9; }
+      /* Force Outlook to provide a "view in browser" menu link. */
+      .ExternalClass { width: 100%; }
+      /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+      /* Force Hotmail to display emails at full width */
+      #backgroundTable { margin: 0; padding: 0; width: 100% !important; line-height: 100% !important; }
+      /* Force Hotmail to display normal line spacing. */
+      table { border-collapse: collapse !important; border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; }
+      /* End reset */
+      .top_padding { padding-top: 48px !important; }
+      *[x-apple-data-detectors], .x-gmail-data-detectors, .x-gmail-data-detectors *, .aBn { border-bottom: 0 !important; cursor: default !important; color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+
+      #outer { width: 660px !important; }
+      table td { border-collapse: collapse; }
+      table { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+      .wrapper { padding: 12px 48px 12px 48px !important; }
+
+      /* Images & Lists */
+      img { display: block; outline: none; -ms-interpolation-mode: bicubic; text-decoration: none; }
+      a img { border: none; }
+      .image_fix { display: block; }
+      ul, ol { margin: 0px 0px 0px 24px; padding: 0px; }
+      li { font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px; margin: 0; padding: 0; }
+
+      h1, .h1 { font-size: 64px !important; line-height: 74px !important; letter-spacing: -1,5%; }
+      h2, .h2 { font-size: 48px !important; line-height: 58px !important; letter-spacing: -1,5%; }
+      h3, .h3 { font-size: 32px !important; line-height: 42px !important; }
+      h4, .h4 { font-size: 24px !important; line-height: 34px !important; }
+      h5, .h5 { font-size: 20px !important; line-height: 30px !important; }
+
+      .hero img { border-radius: 6px !important; }
+      .icon .image img { width: 40px; border-radius: 0px !important; }
+      .copy .image img { width: 100% !important; border-radius: 6px; }
+
+      .thumbnail .image img { width: 164px !important; min-width: auto !important; border-radius: 6px; }
+      .plate .image img { width: 264px !important; min-width: auto !important; border-radius: 6px; }
+
+      .twoColumn .column { width: 264px !important; display: inline-block !important; min-width: auto !important; }
+      .twoColumn .left { margin-right: 36px !important; }
+      .threeColumn .column { width: 164px !important; display: table !important; float: left; min-width: auto !important; }
+      .threeColumn .left, .threeColumn .middle { margin-right: 36px !important; }
+      .features .column { display: table !important; min-width: auto !important; }
+      .features .icon .left { width: 40px !important; margin-right: 24px !important; }
+      .features .icon .right { width: 500px !important; }
+      .features .thumbnail .left { width: 164px !important; margin-right: 36px !important; }
+      .features .thumbnail .right { width: 364px !important; }
+      .features .plate .left { width: 264px !important; margin-right: 36px !important; }
+      .features .plate .right { width: 264px !important; }
+
+      .surveyLarge .container { width: auto !important; max-width: 100% !important; }
+      .surveyLarge .left, .surveyLarge .right { width: auto !important; min-width: auto !important; float: left !important; }
+      .surveyLarge .large { float: left !important; display: table-cell !important; }
+      .surveyLarge .small { float: none !important; display: table !important; }
+      .hide { mso-hide: all; overflow: hidden; max-height: 0; width: 0; display: none !important; line-height: 0; visibility: hidden; }
+      .surveyLarge .column { display: table-cell !important; }
+      .surveySmall .container { width: 440px !important; }
+      .surveyLarge table .show { display: table !important; }
+      .surveyLarge td .show { display: table-cell !important; }
+      .surveyLarge .hide { display: none !important; }
+      .score, .rankHighBottom { display: table-cell !important; }
+      .score { width: 20% !important; }
+
+      #footer { background-color: #F3F6F9; font-family: 'Fakt', Arial; color: #A5AFBD; font-size: 13px; line-height: 18px; }
+      #footer .table-cell { display: table-cell !important; padding: 0px 6px !important; }
+      #footer .none { display: none !important; padding: 0px !important; }
+      #social { padding: 42px 0px 21px !important; text-align: center; }
+      #social .icon { padding: 0px 6px; }
+      #privacy .link, #address .link, #privacy .text, #address .text, #privacy .spacer, #address .spacer { display: table-cell !important; }
+
+      @media only screen and (max-device-width: 660px) {
+        .text img { width: 100% !important; }
+        .column { margin: 0px !important; text-align: left !important; min-width: auto !important; display: table !important; }
+        .twoColumn .column, .threeColumn .column { width: 100% !important; min-width: 100% !important; margin: 0px !important; text-align: left !important; }
+        .features .column { display: table !important; }
+        .features .icon .left, .features .icon .right, .features .thumbnail .left, .features .thumbnail .right, .features .plate .left, .features .plate .right { width: 100% !important; margin: 0px !important; }
+        /* .thumbnail .image img, .plate .image img { width: 100% !important; min-width: 100% !important; } */
+
+        .surveyLarge .container, .surveySmall .container{ width: 300px !important; }
+        .surveyLarge .left, .surveyLarge .right { width: 100% !important; float: none !important; margin: auto !important; }
+        .surveyLarge .column { display: block !important; }
+        .score { width: auto !important; display: table !important; float: none !important; margin: auto !important; text-align:center !important; }
+        .rankHighTop { display: table-cell !important; }
+        .rankHighBottom { display: none !important; }
+
+        #privacy .link, #address .text { display: block !important; }
+        #footer .spacer { display: none !important; }
+      }
+
+      @media only screen and (max-device-width: 415px) {
+        a[href^="tel"], a[href^="sms"] { text-decoration: none; color: black; pointer-events: none; cursor: default; }
+        .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { text-decoration: default; color: #0ABF53 !important; pointer-events: auto; cursor: default; }
+
+      }
+
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        /* You guessed it, ipad (tablets, smaller screens, etc) */
+        a[href^="tel"], a[href^="sms"] { text-decoration: none; color: #0ABF53; pointer-events: none; cursor: default; }
+        .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { text-decoration: default; color: #0ABF53 !important; pointer-events: auto; cursor: default; }
+      }
+
+      @media (prefers-color-scheme: dark ) {
+        body, #footer, #privacy .spacer, #privacy, #address, #copyright { background-color: #00112C !important; }
+        #container, .hero, #footer .spacer, #header { background-color: #051D42 !important; }
+        .newsletter { color: #62728C !important; }
+        .header, .title, .text, .copy, .quote, .owner, #footer .link a, #footer .spacer { color: #FFFFFF !important; }
+        #social .icon { padding: 6px 12px !important; }
+
+        /* Shows Dark Mode-Only Content, Like Images */
+        .dark-img { display: block !important; width: auto !important; overflow: visible !important; float: none !important; max-height: inherit !important; max-width: inherit !important; line-height: auto !important; margin-top: 0px !important; visibility: inherit !important; }
+        .light-img { display: none; display: none !important; }
+
+        /* Duplicate for Gmail */
+        [data-ogsc] .body, [data-ogsc] #footer, [data-ogsc] #privacy .spacer { background-color: #00112C !important; }
+        [data-ogsc] #container, [data-ogsc] .hero, [data-ogsc] #footer .spacer { background-color: #051D42 !important; }
+        [data-ogsc] .newsletter { color: #62728C !important; }
+        [data-ogsc] .header, [data-ogsc] .title, [data-ogsc] .text, [data-ogsc] .copy, [data-ogsc] .quote, [data-ogsc] .owner, [data-ogsc] #footer .link a, [data-ogsc] #footer .spacer { color: #FFFFFF !important; }
+        [data-ogsc] #social .icon { padding: 6px 12px !important; }
+
+        /* Shows Dark Mode-Only Content, Like Images */
+        [data-ogsc] .dark-img { display: block !important; width: auto !important; overflow: visible !important; float: none !important; max-height: inherit !important; max-width: inherit !important; line-height: auto !important; margin-top: 0px !important; visibility: inherit !important; }
+        [data-ogsc] .light-img { display: none; display: none !important; }
+      }
+
+    </style> 
+<!--[if (gte mso 9)|(IE)]><!--> 
+<link href="https://go.adyen.com/rs/222-DNK-376/images/FaktTT-Normal.ttf" rel="stylesheet" /> 
+<link href="https://go.adyen.com/rs/222-DNK-376/images/FaktTT-Blond.ttf" rel="stylesheet" /> 
+<link href="https://go.adyen.com/rs/222-DNK-376/images/FaktTT-SemiBold.ttf" rel="stylesheet" /> 
+<!--<![endif]--> 
+<!--[if gte mso 9]>
+<style>/* Target Outlook 2007 and 2010 */
+td, a { font-family: arial !important; color: #000000; }
+</style>
+<![endif]--> 
+</head> 
+<body style="width: 100%; background-color: #F3F6F9;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody>
+<tr> 
+<td style="text-align: center;"> 
+<table id="outer" cellpadding="0" cellspacing="0" border="0" role="presentation" width="660" style="width: 100% !important; min-width: 300px; max-width: 660px !important; margin: auto;"> 
+<tbody>
+<tr> 
+<td id="container" class="mktoContainer" style="background: #FFFFFF; text-align: left;">
+<table id="header" class="mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #FFFFFF;" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px !important;"> 
+<!-- Preheader --> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="display: none !important; mso-hide: all; overflow: hidden; max-height: 0; width: 0; line-height: 0; visibility: hidden;" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="preheader-Text" class="mktoText" style="color: #FFFFFF; display: none !important; mso-hide: all; overflow: hidden; max-height: 0; width: 0; line-height: 0; visibility: hidden;">Blogs, conferences and new releases of our libraries and plugins.</td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td style="width: 90px; padding: 12px 0px;"> <img src="https://go.adyen.com/rs/222-DNK-376/images/adyen-logo.png" width="90" alt="Adyen" /> </td> 
+<td id="Header-Newsletter" class="newsletter mktoText" style="padding: 12px 0px; text-align: right; font-family: 'Fakt', Arial; font-size: 13px; color: #A5AFBD; line-height: 18px; text-align: right;">Developer Newsletter</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Primary" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Primary-Title" class="title mktoText $\{primaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 44px; line-height: 54px; letter-spacing: -1,5%;"><span style="font-size: 32px;"><span style="color: #0abf53;">June</span> Developer Newsletter</span></td> 
+</tr> 
+<tr> 
+<td id="Text-Primary-Text" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;"><br /><span style="font-size: 20px;"><strong>Launch of the new Partner Program</strong> <span></span></span> <br /> <br /> Adyen launches our new <a href="https://www.adyen.com/partners" target="_blank" style="color: #0abf53; text-decoration: none;">Partner Program</a>. Our valued partners get access to best in class knowledge, support, tools, technology and go to market practices. <br /> Are you a developer working for an agency or a partner of Adyen? <br /> We have a great new feature live for you - Merchant Access! <br /><br /> Once you have an Adyen Partner Portal account set up you can now manage all your Adyen clients in one place. Request access to your clients’ Adyen customer area accounts to manage, configure and integrate on their behalf.<br /> Don’t have a Partner portal account set up? Contact your partner manager or email us at: <span style="color: #0abf53;">partnermanager@adyen.com</span> to get started.</td> 
+</tr> 
+</tbody> 
+</table> 
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="width: 100% !important; display: $\{displaySpacer\};"> 
+<tbody> 
+<tr> 
+<td style="padding: 36px 0px 12px;"> 
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100% !important;" role="presentation"> 
+<tbody> 
+<tr> 
+<td align="left" valign="top" width="660px" height="1" style="background-color: #D2DAE1; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;"> 
+<!--[if gte mso 15]>&nbsp; <![endif]--> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Primary473fa85c-8fc6-42d9-85fe-dd33cc529982" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Primary-Title293fd0b1-f89a-4997-9bf8-2fcd0db3e81e" class="title mktoText $\{primaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 44px; line-height: 54px; letter-spacing: -1,5%;"><span color="#0abf53" style="color: #0abf53; font-size: 32px;"><span style="color: #0abf53; font-size: 32px;">Upcoming events</span></span></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Secondaryc475c346-d991-4728-a5f9-a04370f74363" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Secondary-Title662ea274-1dc2-40a5-b9d3-d1bdd9754b9d" class="title mktoText $\{secondaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 32px; line-height: 42px;"><strong><span style="font-size: 24px;">July 25, Webhooks webinar</span></strong></td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Text1a002583-dda8-4af5-8bac-fcd7b42dd9fc" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">Our Developer Experience team is hosting a webinar about Webhooks and how to automate workflows by processing events in real time. Do you want to know what webhooks are and discover the crucial role they play in scaling your business? Whether your are a developer, a product expert or workflow enthusiast, the session is tailored to give you the knowledge and skills to take advantage of webhooks and automate your workflows. Secure your spot now and gain insights from our experts, followed by an an interactive Q&amp;A session.</td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Linkfc0cfab0-33c4-4d28-a42f-51cdc6240a71" class="link mktoText" style="display: $\{displayLink\}; padding: 12px 0px; text-align: $\{textAlign\};"><a href="https://help.adyen.com/academy/webinars/webhooks" target="_blank" style="font-family: 'Fakt', Arial; color: #0abf53; text-decoration: none;">Sign up › </a></td> 
+</tr> 
+</tbody> 
+</table> 
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="width: 100% !important; display: $\{displaySpacer\};"> 
+<tbody> 
+<tr> 
+<td style="padding: 36px 0px 12px;"> 
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100% !important;" role="presentation"> 
+<tbody> 
+<tr> 
+<td align="left" valign="top" width="660px" height="1" style="background-color: #D2DAE1; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;"> 
+<!--[if gte mso 15]>&nbsp; <![endif]--> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Primary1822eed8-ba55-41d4-8195-7990987604af" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Primary-Title0322a5d5-db9c-4b8b-90c9-d49c6b03360b" class="title mktoText $\{primaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 44px; line-height: 54px; letter-spacing: -1,5%;"><span color="#0abf53" style="color: #0abf53; font-size: 32px;"><span style="color: #0abf53; font-size: 32px;">Past Events</span></span></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Secondaryee8c882e-3682-430a-9258-836beede1b5a" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Secondary-Titlee83df87d-6c99-4701-8c5a-2d5ecd785264" class="title mktoText $\{secondaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 32px; line-height: 42px;"><strong><span style="font-size: 24px;">May 30, Amsterdam Open Source Data Infrastructure Meetup</span></strong></td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Text3d8384a4-0910-4157-94b4-0b9225e8cff9" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">The Open Source Data Infrastructure meetup held at our Rokin office in Amsterdam was a success. Attendees had the opportunity to delve into the world of open-source data technologies and connect with like-minded individuals. The engaging discussions and insightful presentations shed light on the capabilities and advantages of ClickHouse. It was a valuable gathering that fostered knowledge sharing and networking among participants, leaving everyone inspired and eager to explore more open-source data technologies in the future.</td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Linkb9401240-734e-4c2e-8135-d44023e9b076" class="link mktoText" style="display: $\{displayLink\}; padding: 12px 0px; text-align: $\{textAlign\};"><a href="https://www.meetup.com/nl-NL/amsterdam-open-source-data-infrastructure-meetup/events/292824550" target="_blank" style="font-family: 'Fakt', Arial; color: #0abf53; text-decoration: none;">Visit event › </a></td> 
+</tr> 
+<tr> 
+<td style="display: $\{displayImage\}; text-align: $\{textAlign\}; padding: 12px 0px;"> 
+<div id="Text-Secondary-ImageLink71e4a145-f18b-4f2c-9705-f7ac394c8676" class="mktoImg" mktolockimgsize="true">
+<a><img style="border-radius: 6px;" src="https://go.adyen.com/rs/222-DNK-376/images/Adyen OSS Data Meetup.jpeg" width="564" alt="Adyen OSS Data Meetup.jpeg" class="image" /></a>
+</div> </td> 
+</tr> 
+</tbody> 
+</table> 
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="width: 100% !important; display: $\{displaySpacer\};"> 
+<tbody> 
+<tr> 
+<td style="padding: 36px 0px 12px;"> 
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100% !important;" role="presentation"> 
+<tbody> 
+<tr> 
+<td align="left" valign="top" width="660px" height="1" style="background-color: #D2DAE1; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;"> 
+<!--[if gte mso 15]>&nbsp; <![endif]--> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Primary28c07bd0-2d20-45d7-bd7e-212b707a2f48" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Primary-Titlee609afa0-fb51-4689-8e7a-92607b8682f1" class="title mktoText $\{primaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 44px; line-height: 54px; letter-spacing: -1,5%;"><span color="#0abf53" style="color: #0abf53; font-size: 32px;"><span style="color: #0abf53; font-size: 32px;">Tips and Resources</span></span></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Secondaryf4f6f8e3-12d7-4d52-880c-77393a31c1d7" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Secondary-Titlef483c5a3-503a-4f9c-b3fe-0b3cc840425e" class="title mktoText $\{secondaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 32px; line-height: 42px;"><strong>Survey: Our Docs Team needs your help</strong></td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Text75ee255d-130c-4317-9bc5-7e57d58286b0" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">Participate in this study about the navigation structure in our documentation and make your voice heard.</td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Link663f2ac3-4b89-4987-beb4-45f66192e016" class="link mktoText" style="display: $\{displayLink\}; padding: 12px 0px; text-align: $\{textAlign\};"><a href="https://2k54tue4.optimalworkshop.com/treejack/e6b4ccd41f87ccf6c2d229d8a509397e" _blank="" style="font-family: 'Fakt', Arial; color: #0abf53; text-decoration: none;">Go to survey › </a></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Secondarye608bad3-87d6-4ccd-a28a-b21900b0d82f" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Secondary-Title15e2883f-d958-4afc-a4b6-c59a0afeabf0" class="title mktoText $\{secondaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 32px; line-height: 42px;"><strong>Official Adyen React Native v1.0.0 release</strong></td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Texta8833df4-5c12-4fe4-96e3-8b451d96456e" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">We are happy to announce that we officially released v1 of the Adyen React Native SDK. This SDK allows you to natively integrate Adyen Checkout into your React Native project, which will improve the shopper experience significantly. The SDK offers support for Drop-in, Components and API-only integrations. Please check out the repo on GitHub. We invite developers to test the SDK and share feedback to help us improve it!</td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Link9012203e-5985-452c-a1c8-3a95f9fd290a" class="link mktoText" style="display: $\{displayLink\}; padding: 12px 0px; text-align: $\{textAlign\};"><a href="https://docs.adyen.com/online-payments/build-your-integration?platform=Cross-platform&amp;integration=React+Native+Drop-in&amp;version=1.0.0" target="_blank" style="font-family: 'Fakt', Arial; color: #0abf53; text-decoration: none;">See documentation › </a></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Secondaryc59d7219-923c-4975-95f0-9a0159b009ad" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Secondary-Title3284ee52-9600-4df6-909d-060cb036e1d5" class="title mktoText $\{secondaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 32px; line-height: 42px;"><strong>Adyen Webhooks Postman collection</strong></td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Text6a3304b4-129f-4b40-ace1-ddaf78ffa627" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">Testing webhooks is always challenging. This is why we have created a new Postman Collection fully dedicated to webhooks. It includes several examples of webhooks for payments, payouts, management API and our Platform/Financial products.</td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Link21d2e2b2-d1ac-4cf8-9b6b-a6e9f98b44ff" class="link mktoText" style="display: $\{displayLink\}; padding: 12px 0px; text-align: $\{textAlign\};"><a href="https://www.postman.com/adyendev/workspace/adyen-webhooks/overview" target="_blank" style="font-family: 'Fakt', Arial; color: #0abf53; text-decoration: none;">Try it now › </a></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Secondary566a351a-ed9c-4948-abe3-f6f8cd129303" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Secondary-Titlefbf85d6f-5e41-4717-878a-9a468e21604d" class="title mktoText $\{secondaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 32px; line-height: 42px;"><strong>Java Gift Card sample</strong></td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Text9a4b680b-000b-40f9-a155-b5303621d34f" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">Checkout our Java sample application: we have added a new use case that explains how to pay using Gift Card, including options and best practises.</td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Link1a5d006d-5b48-44ab-9636-9c9da429f913" class="link mktoText" style="display: $\{displayLink\}; padding: 12px 0px; text-align: $\{textAlign\};"><a href="https://github.com/adyen-examples/adyen-java-spring-online-payments" target="_blank" style="font-family: 'Fakt', Arial; color: #0abf53; text-decoration: none;">Go to Github › </a></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Secondarybf5f8e95-9ef9-4bd3-aa68-22035458417c" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Secondary-Title6c263862-8076-4a37-83ef-8cb019dcdaf2" class="title mktoText $\{secondaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 32px; line-height: 42px;"><strong>Node Pay by Link sample</strong></td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Texta29332db-c7f7-4998-bd9a-7317d90716cd" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">Pay by Link is one of the tools Adyen makes available to developers and merchants who want to implement an effective Unified Commerce strategy. See our latest example on GitHub to discover how to create, use and disable Pay by Links using the Adyen NodeJS library.</td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Linka03c3f6a-3ffe-4e11-8719-098a71da19a6" class="link mktoText" style="display: $\{displayLink\}; padding: 12px 0px; text-align: $\{textAlign\};"><a href="https://github.com/adyen-examples/adyen-node-online-payments" target="_blank" style="font-family: 'Fakt', Arial; color: #0abf53; text-decoration: none;">Go to Github › </a></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Secondary106cbefc-ee44-471e-92eb-190f4dd319c8" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Secondary-Title08de75ae-9197-48b7-9477-9ba5283cd299" class="title mktoText $\{secondaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 32px; line-height: 42px;"><strong>Adyen for Java developers</strong></td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Text953ded1b-240d-4ec9-a61b-104136105fde" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">Adyen Java library v20 is out with lots of new features and improvements, from OpenAPI automation to Adyen for Platforms support. Find out about how to get started as well as upgrading your Java integration in our latest blog.</td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Linka7e65819-e069-4ee0-b57d-9fad82626a42" class="link mktoText" style="display: $\{displayLink\}; padding: 12px 0px; text-align: $\{textAlign\};"><a href="https://www.adyen.com/blog/adyen-java-library" target="_blank" style="font-family: 'Fakt', Arial; color: #0abf53; text-decoration: none;">View blog › </a></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Secondarybbf760cf-1a4c-4d90-b7a8-1528a7ccc08a" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Secondary-Titled84c5f05-9faf-43a8-be2b-43ef9e559fb9" class="title mktoText $\{secondaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 32px; line-height: 42px;"><strong>Unlocking speed and autonomy with refactoring</strong></td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Text03f3528c-939a-45a7-aa16-149a63946a5f" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">In this article, we share lessons learned from refactoring large swaths of our code so that you can avoid some of the pitfalls involved, and of course reap the benefits of having code that works well and is easy to change.</td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Link36c45c03-d93a-4f75-b9bc-694d4d4b55fb" class="link mktoText" style="display: $\{displayLink\}; padding: 12px 0px; text-align: $\{textAlign\};"><a href="https://www.adyen.com/blog/unlocking-speed-and-autonomy-with-refactoring" target="_blank" style="font-family: 'Fakt', Arial; color: #0abf53; text-decoration: none;">View blog › </a></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Secondary8fe5af59-ae52-42ad-9e00-5ec0adb253b4" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Secondary-Title688ae505-71bf-470a-b631-38a1edfb36a3" class="title mktoText $\{secondaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 32px; line-height: 42px;"><strong>The Migration Guide to Upgrading to Adyen .NET Library 10.0.0</strong></td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Textecde5ea5-26d8-4516-b079-2a20149fc92a" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">We've written a migration-guide for developers who are planning to upgrade to .NET Adyen Library version 10.0.0. We cover new features and breaking changes from 9.x.x to ensure developers can migrate as smoothly as possible.</td> 
+</tr> 
+<tr> 
+<td id="Text-Secondary-Linkaec9dbb7-e1a9-4309-87fa-aafe61783371" class="link mktoText" style="display: $\{displayLink\}; padding: 12px 0px; text-align: $\{textAlign\};"><a href="https://adyen.medium.com/upgrading-to-adyen-net-library-10-0-0-40df79b3f14f" target="_blank" style="font-family: 'Fakt', Arial; color: #0abf53; text-decoration: none;">View guide › </a></td> 
+</tr> 
+</tbody> 
+</table> 
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="width: 100% !important; display: $\{displaySpacer\};"> 
+<tbody> 
+<tr> 
+<td style="padding: 36px 0px 12px;"> 
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100% !important;" role="presentation"> 
+<tbody> 
+<tr> 
+<td align="left" valign="top" width="660px" height="1" style="background-color: #D2DAE1; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;"> 
+<!--[if gte mso 15]>&nbsp; <![endif]--> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Primary8516d239-66cc-44b5-a409-ac651b96e280" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Primary-Title6a3be148-ddf5-4334-9413-553987c95fad" class="title mktoText $\{primaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 44px; line-height: 54px; letter-spacing: -1,5%;"><span color="#0abf53" style="color: #0abf53; font-size: 32px;"><span style="color: #0abf53; font-size: 32px;">Latest Releases</span></span></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Primary1aa5a123-2ede-4c49-8993-f172f4b529d6" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Primary-Title5109fac2-3a0a-4030-96af-1adb17f312f6" class="title mktoText $\{primaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 44px; line-height: 54px; letter-spacing: -1,5%;"><span color="#0abf53" style="color: #0abf53; font-size: 32px;"><strong><a href="https://github.com/Adyen/adyen-web/releases" target="_blank" style="color: #0abf53; font-size: 18px">Adyen Web 5.44.0</a></strong>&nbsp;<br /></span></td> 
+</tr> 
+<tr> 
+<td id="Text-Primary-Text80bffdbc-7276-40f2-ae38-8b4b799a0fbf" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">
+<ul> 
+<li>Added support for the payment method Cash App Pay</li> 
+<li>Click to Pay - Added safeguard check when Shopper checkout with default Card component</li> 
+<li>Added extra checks on the config sent when instantiating Checkout</li> 
+</ul></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Primarye5c0fc0c-9a00-4ff6-859f-1b2317ac85d9" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Primary-Title795f23b3-16a7-4832-b430-15e77fa2cb35" class="title mktoText $\{primaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 44px; line-height: 54px; letter-spacing: -1,5%;"><span color="#0abf53" style="color: #0abf53; font-size: 32px;"><strong><a href="https://github.com/Adyen/adyen-java-api-library/releases" target="_blank" style="color: #0abf53; font-size: 18px;">Adyen Java API Library 20.1.0</a></strong>&nbsp;<br /></span></td> 
+</tr> 
+<tr> 
+<td id="Text-Primary-Text218a0248-9d58-441b-9f63-4793bfd567f4" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">
+<ul> 
+<li>Added new field in requestOptions for additional headers</li> 
+<li>Removed hard validation for additional and optional fields</li> 
+<li>Fixed shell redirect error</li> 
+</ul></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Primarye6c03415-9f19-42c3-beb2-a61f659f2482" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Primary-Titlee47b67e7-c5eb-4c30-94e3-3f8edbde4b9e" class="title mktoText $\{primaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 44px; line-height: 54px; letter-spacing: -1,5%;"><span color="#0abf53" style="color: #0abf53; font-size: 32px;"><strong><a href="https://github.com/Adyen/adyen-ios/releases" target="_blank" style="color: #0abf53; font-size: 18px;">Adyen iOS 5.2.0</a></strong>&nbsp;<br /></span></td> 
+</tr> 
+<tr> 
+<td id="Text-Primary-Textcc49fdf0-e7f6-4511-8172-6b4394c9c840" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">
+<ul> 
+<li>For Drop-in, you can now configure the ACH Direct Debit payment method.</li> 
+<li>For Apple Pay, you can now choose to only accept either debit cards or</li> 
+<li>For gift cards, the shopper can now enter more than 20 digits in the <b>Card number</b> field.</li> 
+<li>Drop-in now displays the correct size when used in split screen mode</li> 
+<li>For alerts under input fields, you can now see full messages that don't fit on one line.</li> 
+<li>For QR codes, the image now shows correctly. Previously, the image appeared completely black.</li> 
+</ul></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+<table id="text-Primaryce5b6963-1801-44fe-b92e-944e430eac09" class="text mktoModule" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td class="wrapper" style="padding: 12px 48px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+<tbody> 
+<tr> 
+<td id="Text-Primary-Title69161aac-ff2b-4941-85fa-4c5e186c719f" class="title mktoText $\{primaryTitleSize\}" style="display: $\{displayTitle\}; padding: 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Semibold', 'Fakt', Arial; color: #00112C; font-weight: normal; font-size: 44px; line-height: 54px; letter-spacing: -1,5%;"><span style="color: #0abf53; font-size: 32px;">Stay in touch</span></td> 
+</tr> 
+<tr> 
+<td id="Text-Primary-Text578a8315-f137-49ff-84ba-eef445e28d21" class="copy mktoText" style="display: $\{displayText\}; padding: 0px 0px 12px 0px; text-align: $\{textAlign\}; font-family: 'Fakt Blond', 'Fakt', Arial; font-size: 16px; line-height: 26px;">That's all for now. Let's keep&nbsp;in touch on Twitter and have a good one!<br /><br />- Ayodeji Ogundare<br /><br /><br />Join our mission to redefine the payment industry and start your unobvious career: check out our latest <a href="https://careers.adyen.com/vacancies" target="_blank" style="font-family: 'Fakt', Arial; color: #0abf53; text-decoration: none;">vacancies</a>.</td> 
+</tr> 
+</tbody> 
+</table> 
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="width: 100% !important; display: $\{displaySpacer\};"> 
+<tbody> 
+<tr> 
+<td style="padding: 36px 0px 12px;"> 
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100% !important;" role="presentation"> 
+<tbody> 
+<tr> 
+<td align="left" valign="top" width="660px" height="1" style="background-color: #D2DAE1; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;"> 
+<!--[if gte mso 15]>&nbsp; <![endif]--> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+</td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr> 
+</tbody>
+</table>   
+</body>
+</html>
