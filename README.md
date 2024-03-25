@@ -15,7 +15,7 @@ Feel free to contribute to this repository by creating a pull request.
 
 ## Who to contact
 
-This page is lead by the Developer Relations team. Feel free to contact us at [devrel@adyen.com](mailto:devrel@adyen.com), or directly ping @ayodejidev or @jlengrand.
+This page is lead by the Developer Relations team. Feel free to contact us at [devrel@adyen.com](mailto:devrel@adyen.com), or directly ping @ayodejidev or @gcatanese.
 
 ## License
 
