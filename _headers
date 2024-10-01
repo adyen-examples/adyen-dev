@@ -1,6 +1,6 @@
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains
-  Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self' https://*.adyen.com; style-src 'self' https://*.adyen.com; frame-ancestors 'self'; form-action 'self';
+  Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self' https://*.adyen.com; style-src 'self' https://*.adyen.com https://cdn.jsdelivr.net; frame-ancestors 'self'; form-action 'self';
   X-Frame-Options: deny
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
