@@ -390,6 +390,35 @@ main {
 }
 /* Resources ends */
 
+
+/* Icons programming languages start */
+
+.a_icon {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.a_icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.icon-text-container {
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
+}
+
+.icon-text {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Icons programming languages end */
+
+
 /* Newsletter Archive start */
 
 .newsletter_links_list {
