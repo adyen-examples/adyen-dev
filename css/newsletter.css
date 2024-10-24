@@ -1,0 +1,252 @@
+@import url(variables.css);
+
+/* Adyen fonts imports*/
+
+@font-face {
+    font-family: 'Fakt';
+    font-style: normal;
+    font-weight: 400;
+    mso-font-alt: 'Arial';
+    src: url('https://go.adyen.com/rs/222-DNK-376/images/Fakt-Normal.otf'),
+        url('https://go.adyen.com/rs/222-DNK-376/images/FaktTT-Normal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fakt Blond';
+    font-style: normal;
+    font-weight: 400;
+    mso-font-alt: 'Arial';
+    src: url('https://go.adyen.com/rs/222-DNK-376/images/Fakt-Blond.otf'),
+        url('https://go.adyen.com/rs/222-DNK-376/images/FaktTT-Blond.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fakt Semibold';
+    font-style: normal;
+    font-weight: 400;
+    mso-font-alt: 'Arial';
+    src: url('https://go.adyen.com/rs/222-DNK-376/images/Fakt-SemiBold.otf'),
+        url('https://go.adyen.com/rs/222-DNK-376/images/FaktTT-SemiBold.ttf') format('truetype');
+}
+
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Fakt, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    width: 100%;
+    background-color: #F3F6F9;
+
+}
+
+a {
+    color: var(--primary-color1);
+}
+
+
+/* Body container section */
+.container {
+    min-width: 300px;
+    max-width: 660px;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    background-color: var(--white-color);
+}
+
+/* Header Section */
+header {
+    color: #A5AFBD;
+    margin-bottom: 40px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    float: left;
+}
+
+.header-title {
+    float: right;
+    font-size: 0.8em;
+}
+
+header .header_logo {
+    display: block;
+    margin: 4px 0 0 2px;
+    max-width: 100px;
+    height: auto;
+    float: left;
+}
+
+/* Intro Section */
+.intro {
+    margin-bottom: 20px;
+}
+
+.intro-month {
+    color: #0abf53;
+}
+
+/* Featured Update Section */
+.featured-update {
+    margin-bottom: 20px;
+}
+
+.featured-update h2 {
+    color: #333;
+}
+
+.featured-update p {
+    margin-top: 10px;
+}
+
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 1%;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: var(--primary-color1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: var(--dark-primary-color);
+}
+
+.line {
+    color: #A5AFBD;
+}
+
+/* Other Updates Section */
+.other-updates h2 {
+    color: var(--primary-color1);
+    margin-bottom: 10px;
+}
+
+.other-updates ul {
+    list-style: square inside;
+}
+
+.updates {
+    margin-bottom: 20px;
+}
+
+.updates p {
+    margin-bottom: 10px;
+}
+
+/* Floating Sidebar Styles */
+.subscribe-sidebar {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    z-index: 1000;
+}
+
+.subscribe-btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--white-color);
+    color: var(--primary-color1);
+    border-color: #1e1e1e;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-btn:hover {
+    background-color: #f3f6f9;
+    color: var(--dark-primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .subscribe-sidebar {
+        position: static;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .read-more {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #00112C;
+        color: #e0e0e0;
+    }
+
+    .container {
+        background-color: #051D42;
+    }
+
+    header {
+        color: #888;
+    }
+
+    .header-title {
+        color: #bbb;
+    }
+
+    .featured-update h2,
+    .other-updates h2 {
+        color: var(--primary-color1);
+    }
+
+    .read-more {
+        background-color: var(--primary-color1);
+        color: var(--white-color);
+    }
+
+    .read-more:hover {
+        background-color: var(--dark-primary-color);
+    }
+
+    .subscribe-sidebar {
+        color: var(--white-color);
+    }
+
+    .subscribe-btn {
+        background-color: var(--white-color);
+        color: var(--primary-color1);
+    }
+
+    .line {
+        color: #555;
+    }
+}
