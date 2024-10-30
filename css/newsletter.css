@@ -102,6 +102,17 @@ header .header_logo {
     color: #0abf53;
 }
 
+.intro-text {
+    margin-bottom: 20px;
+}
+
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 1%;
+}
+
 /* Featured Update Section */
 .featured-update {
     margin-bottom: 20px;
@@ -113,13 +124,6 @@ header .header_logo {
 
 .featured-update p {
     margin-top: 10px;
-}
-
-.featured-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 1%;
 }
 
 .read-more {
